@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="math order test">
+	<test name="method order test" preserve-order="false">
+		<classes>
+			<class name="com.mycode.testng.OrderTest" >
+			<methods>
+			   <include name="C"></include>
+			   <include name="B"></include>
+			   <include name="A"></include>
+			</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 

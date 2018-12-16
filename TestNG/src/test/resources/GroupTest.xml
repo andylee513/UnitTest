@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="group test" parallel="false">
+	<!-- 单个组 -->
+	<test name="group one test">
+		<groups>
+			<run>
+				<include name="functest" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.mycode.testng.GroupTest" />
+		</classes>
+	</test>
+
+	<!-- 组中组 -->
+	<test name="group mutiply test">
+		<groups>
+			<define name="all">
+				<include name="functest" />
+				<include name="checkintest" />
+			</define>
+
+			<run>
+				<include name="all" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.mycode.testng.GroupTest" />
+		</classes>
+	</test>
+	
+</suite> 

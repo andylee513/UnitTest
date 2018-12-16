@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="exception test" parallel="false">
+	<!-- 单个组 -->
+	<test name="exception one test">
+		<classes>
+			<class name="com.mycode.testng.ExceptionTest" />
+		</classes>
+	</test>
+</suite> 
